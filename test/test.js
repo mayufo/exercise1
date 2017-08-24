@@ -29,16 +29,9 @@ describe('assert', function () {
       xxx;
     }
     // 修改下面代码使得满足测试描述
-    //   assert.throws (
-    //     fn,
-    //     /xxx is not defined/
-    // )
-
-    // 这样也能过，但不正常
-    // try {
-    //   fn()
-    // } catch (e) {
-    //     assert.equal(e.message, 'xxx is not defined')
-    // }
+    assert.throws(
+      fn,
+      /xxx is not defined/
+    )
   })
 })
